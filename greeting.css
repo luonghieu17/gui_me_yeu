@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Nền gradient nhẹ nhàng */
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.greeting-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.greeting-container h1 {
+    color: #ff69b4; /* Màu hồng giống như trước */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.greeting-message {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.greeting-message p {
+    margin-bottom: 1rem;
+}
+
+.greeting-message p:last-child {
+    font-style: italic;
+    color: #ff69b4; /* Màu hồng cho phần chữ ký */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
